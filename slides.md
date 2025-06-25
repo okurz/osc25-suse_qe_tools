@@ -1,14 +1,12 @@
 ## Scope
 * What is the SUSE QE Tools team
-* Who we are
-* What's in our responsibility
-* How we work
+* Who we are, What's in our responsibility
+* What happened in the past
+* What could be done in the future
 
 Note:
-This talk will give an overview of who is the SUSE QE Tools team, what is in
-our responsibility, what we did in the past time and what we do. The products
-that we care about will be presented and the workflows of the team will be
-shown. Opportunities for contributions will be discussed.
+This talk will give an overview of who is the SUSE QE Tools team, what
+happened in the past year and what could be done in the future.
 
 ---
 
@@ -18,9 +16,9 @@ shown. Opportunities for contributions will be discussed.
 
 https://progress.opensuse.org/projects/qa/wiki/Tools
 
-* Team of 8 SUSE employees
+* Two teams, 10 SUSE employees (*dev* and *infra*)
 * Engaged in various communities
-* Inter-departement team, different backgrounds
+* Inter-department team, different backgrounds
 
 ---
 
@@ -28,38 +26,36 @@ https://progress.opensuse.org/projects/qa/wiki/Tools
 
 https://progress.opensuse.org/projects/qa/wiki/Tools#Team-responsibilities
 
-* Develop and maintain QE related tooling, mostly used for SLE/openSUSE
-  distributions
-* Administration of related infrastructure
-* *Not:* Doing QA ourselves (mostly)
+* *dev:* openQA - upstream os-autoinst+openQA and operating openQA on o3
+* *infra:* QE infrastructure - OSD, o3 OS and base, qem-dashboard, hardware, compliance, etc. - SUSE specific solutions
 
 ---
 
-### Our userbase
+## What happened in the past
 
-* SUSE QA engineers and SUSE SLE release management
-* Every SLE/openSUSE developer
-* [openSUSE](https://openqa.opensuse.org), [Fedora](https://openqa.fedoraproject.org/), [Debian](https://openqa.debian.net/), [Qubes OS](https://openqa.qubes-os.org/) , [GNOME](https://openqa.gnome.org), [and](https://www.codethink.co.uk/articles/2021/automated-linux-kernel-testing/), [many](https://en.euro-linux.com/blog/openqa-or-how-we-test-eurolinux/), [more](https://openqa.opensuse.org/group_overview/23 )
-* and of course our team itself for [openQA-in-openQA Tests](https://openqa.opensuse.org/group_overview/24) ;)
+<small>
 
----
-
-## How we work
-
-https://progress.opensuse.org/projects/qa/wiki/Tools#How-we-work
-
-* We follow a DevOps Process
-* Various public github projects (and some internal)
-* Continuous deployment (nearly) everywhere!
-* Appreciating contributions, helping others, helping us
+* From [resolved tasks](https://progress.opensuse.org/issues?query_id=541)
+  roughly 900 tickets per year
+* Fair split among sub-teams: 50% *dev*, 50% *infra*
+* Migration to new SUSE datacenters
+* We could shift focus again to development
+* Full version control awareness within openQA [poo#58184](https://progress.opensuse.org/issues/58184)
+* Improved code coverage in os-autoinst [poo#130414](https://progress.opensuse.org/issues/130414)
+* [team collaboration ad video](https://www.youtube.com/shorts/Y5_LeNhGqk0)
 
 ---
 
-## Points to take away
+### Roadmap of the next period
 
-* We provide tools and infrastructure
-* openSUSE tests are done by you! … and some SUSE teams
-* We are there to help and welcome contributions :)
+<small>
+
+Improve the openQA experience benefitting biggest user groups while staying compliant as well as performant:
+* openQA for SUSE customers [poo#127031](https://progress.opensuse.org/issues/127031)
+* Support switch to gitea for openSUSE/SUSE based products, e.g. SLE16 [poo#180626](https://progress.opensuse.org/issues/180626)
+* [ux] State-of-art user experience for openQA [poo#154768](https://progress.opensuse.org/issues/154768)
+
+
 
 ---
 
@@ -67,7 +63,7 @@ https://progress.opensuse.org/projects/qa/wiki/Tools#How-we-work
 
 <p><img src="img/chameleon.svg" style="max-height:300px;"></p>
 
-https://v.gd/okurz_osc22
+https://v.gd/okurz_osc25
 
 <small>
 Presentation created using <br><a href="https://github.com/krig/opensuse-presentation-template">https://github.com/krig/opensuse-presentation-template</a>
